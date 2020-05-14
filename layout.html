@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Layout</title>
+    </head>
+    <body>
+        <style> /* inline css stylesheet */
+        @import url("https://use.typekit.net/gxg5kpn.css");
+            header {
+                background-repeat : no-repeat;
+                background-size:cover;
+                position : -webkit-sticky; /* makes the box move wihin its parent - browser window */
+                top:10px; /* top of browser to the border of the box */
+                left:10px; /*left of thebrowser to the left border of the box*/
+                width:50%;
+                height:450px;
+                font-family:akagi-pro, sans-serif;
+                font-weight: 400;
+                font-style:normal;
+                z-index:3; /* the layer the boc is in */
+                overflow : hidden;
+            }
+            header img{
+                width : 100px;
+                opacity: 0.9;
+                position: absolute;
+                top:10px;
+                left:10px;
+            }
+
+            nav {
+                background-color:cornsilk;
+                position: absolute;
+                top:20px;
+                left:200px;
+                width:200px;
+                height:150px;
+            }
+            nav a{
+                text-decoration: none;
+                color: green;
+                font-size:1.3em;
+                font-weight: 800;
+            }
+            nav a:hover {
+                color:darkgrey;
+                font-weight:900;
+            }
+
+            main {
+                background-color:antiquewhite;
+                height:1200px;
+                width:500px;
+            }
+        </style>
+        <header> <!--first box-->
+            <img src="image/flowerlogo.png" alt="flower logo">
+            
+        </header>
+        <nav> <!--second box-->
+            <h1>navigation</h1>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+        </nav>
+        <main> 
+            <h1>main section</h1>
+        </main>
+    </body>
+    </html>
